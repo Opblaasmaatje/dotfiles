@@ -1,4 +1,4 @@
-alias ls="gls --color -h --group-directories-first"
+alias ls="lsd --group-directories-first"
 alias la="ls -la"
 alias ll="ls -lah"
 
