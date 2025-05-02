@@ -1,11 +1,4 @@
-alias reload="source ~/.zshrc"
-alias edit-alias="subl ~/.oh-my-zsh/custom/aliases.zsh"
-alias edit-zshrc="subl ~/.zshrc"
-alias ls="lsd --group-dirs first"
-alias art="php artisan"
-alias amfs="art migrate:fresh --seed"
-alias ps="pst ."
-alias lart="php laracord"
-alias ut="uptime"
-alias sm="smerge ."
-alias to="git checkout -b "
+source ~/dotfiles/aliases/base.zsh
+source ~/dotfiles/aliases/network.zsh
+source ~/dotfiles/aliases/please.zsh
+source ~/dotfiles/aliases/laravel.zsh
