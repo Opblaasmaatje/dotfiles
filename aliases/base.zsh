@@ -52,7 +52,6 @@ alias ccat="highlight --out-format=ansi"
 alias download_website='wget -H -E -k -p '
 
 
-
 alias ps="pst ."
 alias sm="smerge ."
 alias to="git checkout -b "
