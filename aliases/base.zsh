@@ -36,10 +36,7 @@ alias prj='project'
 alias p='project'
 
 # notes
-#alias notes="mkdir -p ~/Documents/Notes/ && $EDITOR ~/Documents/Notes/index.md"
-#alias note="notes"
-#alias todo="mkdir -p ~/Documents/Notes/ && $EDITOR ~/Documents/Notes/todo.md"
-#alias TODO="todo"
+alias t="todo.sh"
 
 # getting around
 alias ..="cd .."
