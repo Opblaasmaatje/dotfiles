@@ -25,6 +25,13 @@ then use GNU stow to create symlinks
 $ stow .
 ```
 
+
+Use stow . --adopt in order to apply the pending changes in the non-stow directory onto the stow directory.
+
+```
+$ stow .
+```
+
 ----
 
 ### Brew dependencies to install
