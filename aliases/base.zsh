@@ -55,3 +55,4 @@ alias download_website='wget -H -E -k -p '
 alias ps="pst ."
 alias sm="smerge ."
 alias to="git checkout -b "
+alias retrigger="git commit --allow-empty -m 'Retrigger' && git push"
