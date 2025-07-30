@@ -84,6 +84,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search you-should-u
 source $ZSH/oh-my-zsh.sh
 
 source "$HOME/dotfiles/aliases/imports.zsh"
+source "$HOME/dotfiles/functions/imports.zsh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
