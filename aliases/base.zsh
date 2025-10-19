@@ -56,3 +56,6 @@ alias ps="pst ."
 alias sm="smerge ."
 alias to="git checkout -b "
 alias retrigger="git commit --allow-empty -m 'Retrigger' && git push"
+
+alias ecs="./vendor/bin/ecs --fix"
+alias larastan="./vendor/bin/phpstan analyse"
