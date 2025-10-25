@@ -26,9 +26,20 @@
             "format": "{name} ({cores-physical}C/{cores-logical}T) @ {freq-max}",
             "keyColor": "green"
         },
+      {
+        "type": "disk",
+        "key": "│ ├",
+        "format": "{size-percentage-bar} {size-used} / {size-total}",
+        "percent": {
+          "type": 2,
+          "green": 30,
+          "yellow": 70
+        },
+        "keyColor": "green"
+      },
         {
             "type": "memory",
-            "key": "│ ├󰍛",
+            "key": "└ └󰍛",
             "format": "{percentage-bar} {used} / {total}",
             "percent": {
                 "type": 2,
@@ -37,17 +48,7 @@
             },
             "keyColor": "green"
         },
-        {
-            "type": "disk",
-            "key": "└ └",
-            "format": "{size-percentage-bar} {size-used} / {size-total}",
-            "percent": {
-                "type": 2,
-                "green": 30,
-                "yellow": 70
-            },
-            "keyColor": "green"
-        },
+
         {
             "type": "custom",
             "format": "\u001b[90m└────────────────────────────────────────────────────┘"

@@ -59,3 +59,4 @@ alias retrigger="git commit --allow-empty -m 'Retrigger' && git push"
 
 alias ecs="./vendor/bin/ecs --fix"
 alias larastan="./vendor/bin/phpstan analyse"
+alias dragon="composer"
