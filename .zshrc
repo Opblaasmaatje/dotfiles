@@ -1,7 +1,7 @@
 export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
+export PATH="/opt/homebrew/bin:$PATH"
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -90,3 +90,25 @@ source "$HOME/dotfiles/functions/imports.zsh"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 eval "$(zoxide init zsh)"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# bun completions
+[ -s "/Users/opblaasmaatje/.bun/_bun" ] && source "/Users/opblaasmaatje/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# ENABLE this when using brew.
+# Herd injected PHP 8.4 configuration.
+# export HERD_PHP_84_INI_SCAN_DIR="/Users/opblaasmaatje/Library/Application Support/Herd/config/php/84/"
+
+# Herd injected PHP binary.
+# export PATH="/Users/opblaasmaatje/Library/Application Support/Herd/bin/":$PATH
+
+
+# Herd injected PHP 8.5 configuration.
+# export HERD_PHP_85_INI_SCAN_DIR="/Users/opblaasmaatje/Library/Application Support/Herd/config/php/85/"
